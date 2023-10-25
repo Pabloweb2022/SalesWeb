@@ -7,6 +7,8 @@ namespace SalesWebMvc.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Developer"] = "Pablo Gomes";
+
             List<Department> list = new List<Department>();
 
             list.Add(new Department { Id = 1, Name = "Eletronics"});
